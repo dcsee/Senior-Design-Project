@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <!-- HTC vendor-id=0x0bb4 -->
+    <usb-device vendor-id="2996"/>
+    <!-- TOSHIBA vendor-id=0x0930 -->
+    <usb-device vendor-id="2352"/>
+    <!-- SONY vendor-id=0x054c -->
+    <usb-device vendor-id="1356"/>
+    <!-- SONY Mobile Communications vendor-id=0x0fce -->
+    <usb-device vendor-id="4046"/>
+    <!-- SONY Ericsson vendor-id=0x0fce -->
+    <usb-device vendor-id="4046"/>
+    <!-- SAMSUNG vendor-id=0x04e8 -->
+    <usb-device vendor-id="1256"/>
+    <!-- MOTOROLA vendor-id=0x022b8 -->
+    <usb-device vendor-id="8888"/>
+    <!-- INTEL vendor-id=0x8087 -->
+    <usb-device vendor-id="32903"/>
+    <!-- GOOGLE vendor-id=0x18d1 -->
+    <usb-device vendor-id="6353"/>
+
+</resources>

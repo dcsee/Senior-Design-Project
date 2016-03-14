@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="16dp"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    android:paddingRight="8dp"
+    android:gravity="right">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_marginLeft="32dp"
+        android:background="@color/material_deep_teal_500" >
+
+        <TextView
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/message_text"
+            android:id="@+id/message_content_text" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_phone_android_black_48dp"
+            android:id="@+id/message_content_image"
+            android:contentDescription="@string/message_image_description" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/message_timestamp_text"
+                android:id="@+id/message_timestamp_text"
+                />
+
+            <ImageView
+                android:src="@drawable/check_icon"
+                android:id="@+id/message_delivered_indicator"
+                android:layout_marginLeft="8dp"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_marginLeft="8dp"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:id="@+id/message_person_thumbnail"
+        android:src="@drawable/person_icon"
+        android:contentDescription="@string/your_image_description" />
+
+</LinearLayout>

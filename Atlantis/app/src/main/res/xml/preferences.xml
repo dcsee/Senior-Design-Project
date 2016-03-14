@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory>
+
+        <ListPreference
+            android:key="@string/picture_quality_key"
+            android:title="@string/picture_quality_setting"
+            android:summary="%s"
+            android:entries="@array/image_quality_options"
+            android:entryValues="@array/image_quality_values"
+            android:defaultValue="50"/>
+        <ListPreference
+            android:key="@string/harvester_key"
+            android:title="@string/harvester_max_setting"
+            android:summary="%s"
+            android:entries="@array/harvester_max_options"
+            android:entryValues="@array/harvester_max_values"
+            android:defaultValue="5242880"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

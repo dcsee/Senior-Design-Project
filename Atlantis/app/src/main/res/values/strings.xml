@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Atlantis</string>
+
+    <string name="title_activity_conversation">Conversation Activity</string>
+    <string name="title_activity_new_conversation">New Conversation</string>
+    <string name="title_activity_sync">Sync</string>
+    <string name="title_activity_bluetooth">Syncing Via Bluetooth</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_notebooks">Notebooks</string>
+    <string name="title_activity_message">Message</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="picture_quality_setting">Picture Quality</string>
+    <string name="picture_quality_default">50</string>
+    <string name="picture_quality_key">image_quality_preference</string>
+    <string name="harvester_max_setting">Notebook Cache Size</string>
+    <string name="harvester_max_default">5242880</string>
+    <string name="harvester_key">harvester_max_preference</string>
+
+
+    <string name="salt_file">com.atlantis.salt_file</string>
+    <string name="salt_key">salt</string>
+
+    <string name="iv_file">com.atlantis.iv_file</string>
+    <string name="iv_key">iv</string>
+
+    <string name="pin_key_file">com.atlantis.pin_key_file</string>
+    <string name="pin_key">pin_key</string>
+    <string name="hashed_pin_key">hashed_pin_key</string>
+
+    <string name="is_app_lock_status_file">com.atlantis.is_app_lock_status_file</string>
+    <string name="is_app_lock_status">com.atlantis.is_app_lock_status</string>
+
+    <string name="hello_world">Hello world!</string>
+
+    <string name="message_context_menu_title">Message</string>
+    <string name="conversation_context_menu_title">Conversation</string>
+    <string name="context_menu_delete">Delete</string>
+    <string name="result_message_deleted">Message Deleted</string>
+    <string name="result_conversation_deleted">Conversation Deleted</string>
+    <string name="result_select_failed">Selection Failed</string>
+
+    <string name="sync_method_sd_card_title">SD Card</string>
+    <string name="sync_method_sd_card_description">Requires the other person to have an SD card slot</string>
+
+    <string name="sync_method_bluetooth_title">Bluetooth</string>
+    <string name="sync_method_bluetooth_description">Requires a private location</string>
+    <string name="title_activity_fake_sync">FakeSyncActivity</string>
+
+    <string name="sync_method_dummy_description">Fake sync method</string>
+    <string name="sync_method_dummy_title">Dummy</string>
+    <string name="send_button_text">Send</string>
+    <string name="message_edit_text_placeholder">Send a message</string>
+    <string name="sync_method_icon_description">Method Icon</string>
+    <string name="select_method_to_sync_text">Select a method to sync</string>
+    <string name="notebook_size_label">Notebook Size</string>
+    <string name="create_conversation_button_text">CREATE</string>
+    <string name="syncing_notebook_text">Syncing Notebook</string>
+    <string name="sync_button_text">Sync</string>
+    <string name="dummy_sync_text">Dummy sync</string>
+    <string name="creating_notebook_text">Creating Notebooks</string>
+    <string name="cancel_creating_notebook_button_text">Cancel</string>
+    <string name="notebook_percentage_left_format">%1$d%%</string>
+    <string name="notebook_name_format">With %1$s</string>
+    <string name="conversation_icon_description">Conversation Icon</string>
+    <string name="conversation_name_text">Medium Text</string>
+    <string name="conversation_message_text">Small Text</string>
+    <string name="new_conversation_button_description">New Conversation</string>
+    <string name="sync_warning_message_text">Sync to continue conversation securely</string>
+    <string name="connection_code">server status code</string>
+    <string name="to_field_name">With</string>
+    <string name="notebooks_explanation_text">Notebooks are the used to encrypt messages securely. They need to be synced with contacts regularly.</string>
+    <string name="cancelled_text">Cancelled</string>
+    <plurals name="text_estimate">
+        <item quantity="one">About %1$s text message</item>
+        <item quantity="other">About %1$s text messages</item>
+    </plurals>
+    <plurals name="picture_estimate">
+        <item quantity="one">About %1$s image</item>
+        <item quantity="other">About %1$s images</item>
+    </plurals>
+
+    <!-- Bluetooth messages -->
+    <string name="bluetooth_not_supported">Device does not support BLE</string>
+    <string name="bluetooth_scan">Scanning…</string>
+    <string name="bluetooth_stopped">Bluetooth stopped</string>
+    <string name="bluetooth_stopped_scanning">Discovery was already stopped</string>
+    <string name="bluetooth_turned_on">Bluetooth turned on</string>
+    <string name="bluetooth_already_on">Bluetooth is on</string>
+    <string name="bluetooth_download_otp_message">Downloading OTP</string>
+    <string name="title_activity_lock_screen">Unlock App</string>
+    <string name="title_activity_create_pin">Create Pin</string>
+
+    <!--Pin Lock-->
+    <string name="pin_creation_instruction">Please enter a 4-digit PIN</string>
+    <string name="error_not_enough_otp">There isn\'t enough notebook to send this message. Please re-sync the conversation or send a smaller message.</string>
+    <string name="invalid_pin_entered">Invalid PIN entered</string>
+    <string name="try_to_go_back_before_login_message">Please enter PIN to continue</string>
+    <string name="invalid_pin_sequence">Please enter a 4-digit PIN</string>
+    <string name="wrong_pin_message">Incorrect PIN entered</string>
+    <string name="login_failed_message">Login has encountered an error</string>
+    <string name="pin_creation_failed_message">Creating a PIN has encountered an error</string>
+    <string name="lock_screen_text">Enter PIN</string>
+    <string name="create_pin_screen_hint">1234</string>
+    <string name="sync_activity_failed">Sync failed</string>
+
+    <!-- Error messages -->
+    <string name="error_starting_conversation">Oops, something bad happened. Please try again.</string>
+    <string name="error_loading_conversation">Oops, the conversations could not be loaded.</string>
+    <string name="error_refreshing_conversation">Oops, there was a problem refreshing the conversation.</string>
+    <string name="error_sending_message">Oops, there was a problem sending the message.</string>
+    <string name="error_loading_notebooks">Oops, the notebooks could not be loaded.</string>
+    <string name="error_loading_image">Could not load image</string>
+    <string name="error_loading_text">Could not load text</string>
+    <string name="error_deleting_message">Oops, there was a problem deleting the message.</string>
+    <string name="error_deleting_conversation">Oops, there was a problem deleting the conversation.</string>
+
+    <string name="design_medium_text">Medium Text</string>
+    <string name="notebook_not_synced_text">Not synced</string>
+    <string name="error_creating_conversation">Oops, could not create new conversation</string>
+    <string name="name_separator">", "</string>
+    <string name="name_last_separator">" &amp; "</string>
+
+    <string name="attach_text">Attach content</string>
+    <string name="attach_icon_content_description">Attach content</string>
+    <string name="self_display">Me</string>
+    <string name="complete_button_text">Complete</string>
+    <string name="need_one_contact_text">Include at least one contact to start a conversation</string>
+    <string name="title_activity_usb">Syncing via USB</string>
+    <string name="usb_activity">Connect to the other device with USB</string>
+    <string name="sync_method_usb_title">USB</string>
+    <string name="sync_method_usb_description">Requires OTG cable</string>
+    <string name="title_activity_usb_host">Syncing via USB</string>
+    <string name="title_activity_usb_accessory">Syncing via USB</string>
+    <string name="usb_host_page">Host</string>
+    <string name="usb_accessory_page">Accessory</string>
+    <string name="usb_not_supported">USB OTG is not supported on this device</string>
+    <string name="reconfirm_pin">Please confirm PIN again</string>
+    <string name="error_loading_notebook">Oops, could not load notebook</string>
+    <string name="title_activity_notebook">Notebook</string>
+    <string name="new_notebook_size_label">New Notebook Size</string>
+    <string name="re_sync_button_text">Re-sync</string>
+    <string name="action_search_text">Search</string>
+    <string name="action_refresh_title">Refresh</string>
+    <string name="action_sync_title">Sync</string>
+    <string name="button_discover_text">Discover</string>
+    <string name="device_name_text">Medium Text</string>
+    <string name="message_text">Message Text</string>
+    <string name="message_timestamp_text">Message Timestamp</string>
+    <string name="sync_method_name_text">Medium Text</string>
+    <string name="sync_method_description_text">Small Text</string>
+    <string name="message_contact_name_text">Person Name</string>
+    <string name="send_message_button_text">Send Message</string>
+    <string name="host_button_text">Host</string>
+    <string name="bluetooth_icon_description">Bluetooth Device</string>
+    <string name="send_button_description">Send Button</string>
+    <string name="message_image_description">Message Image</string>
+    <string name="contact_image_description">Contact Image</string>
+    <string name="your_image_description">Your Image</string>
+    <string name="contact_name_placeholder_text">Contact Name Placeholder</string>
+    <string name="error_could_not_create_notebook">Oops, could not create new notebook</string>
+    <string name="re_sync_notebook_title">Re-Sync Notebook</string>
+    <string name="contact_name_title">Contact Name</string>
+    <string name="available_notebook_cache_text">Notebook Available</string>
+    <string name="notebook_description_text">In order to communicate securely, notebooks are created with random data that is sourced from the environment. It may take time to gather a large notebook.</string>
+    <string name="title_activity_change_pin">Change PIN</string>
+    <string name="enter_new_pin">Please Enter New PIN</string>
+    <string name="change_pin_text">Change PIN</string>
+    <string name="error_bluetooth_ack">Bluetooth Refused</string>
+    <string name="sync_sending_message">Sending…</string>
+    <string name="sync_receiving_message">Receiving…</string>
+    <string name="sync_dialog_title">Syncing Notebooks</string>
+    <string name="default_lock_screen_hint">Enter PIN</string>
+    <string name="large_lock_icon_description">Lock icon</string>
+
+</resources>

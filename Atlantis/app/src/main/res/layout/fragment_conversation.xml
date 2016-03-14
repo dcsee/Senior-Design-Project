@@ -1,0 +1,123 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:mContext="atlantis.com.atlantis.activities.ConversationActivity$PlaceholderFragment"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="8dp"
+        android:translationZ="16dp"
+        android:background="#ffdddddd"
+        android:paddingTop="8dp">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/notebook_percentage_left_progress_bar"
+            android:layout_gravity="center"
+            android:progress="80"
+            android:layout_weight="1"
+            android:layout_marginRight="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/notebook_percentage_left_format"
+            android:id="@+id/notebook_percentage_left_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sync_warning"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@color/sync_warning"
+        android:translationZ="16dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/sync_warning_message_text"
+            android:id="@+id/textView8"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/sync_button_text"
+            android:id="@+id/sync_button"
+            android:layout_gravity="center_vertical"
+            style="?android:attr/borderlessButtonStyle"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/messages_fragment"
+        android:layout_gravity="center"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom">
+
+        <ImageButton
+            android:layout_width="@dimen/editor_button_width"
+            android:layout_height="match_parent"
+            android:text="@string/attach_text"
+            android:src="@drawable/attach_icon"
+            android:id="@+id/attach_button"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_gravity="bottom"
+            android:contentDescription="@string/attach_icon_content_description" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp">
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine|textCapSentences"
+                android:ems="10"
+                android:id="@+id/message_edit_text"
+                android:layout_gravity="bottom"
+                android:hint="@string/message_edit_text_placeholder" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:contentDescription="@string/send_button_description"
+            android:layout_width="@dimen/editor_button_width"
+            android:layout_height="match_parent"
+            android:text="@string/send_button_text"
+            android:src="@drawable/send_icon"
+            android:id="@+id/send_message_button"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_gravity="bottom" />
+
+    </LinearLayout>
+</LinearLayout>
